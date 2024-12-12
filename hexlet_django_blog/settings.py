@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'hexlet_django_blog',
+    'hexlet_django_blog.article',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'hexlet_django_blog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ BASE_DIR / 'templates' ], # Add templates directory to the list of directories
+        'DIRS': [ BASE_DIR / 'templates'], # Add templates directory to the list of directories
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
