@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
-<body>
-    <header>
-        <h1>About Hexlet Django Blog</h1>
-    </header>
-    <main>
-        <p>Welcome to the Hexlet Django Blog project! This project is part of the Hexlet course on learning Django, a high-level Python web framework.</p>
-        <p>In this project, you will learn how to:</p>
-        <ul>
-            <li>Set up a Django project</li>
-            <li>Create views and templates</li>
-            <li>Configure URL routing</li>
-            <li>Work with databases</li>
-            <li>And much more!</li>
-        </ul>
-        <p>Happy coding!</p>
-    </main>
-    <footer>
-        <p>&copy; 2023 Hexlet. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+{% extends "base_about.html" %}
+{% block about_page %}
+Это главная страница блога. Здесь происходят изменения структуры сайта
+{% endblock %}
