@@ -1,5 +1,6 @@
 from django.views.generic.base import TemplateView
-from django.shortcuts import render
+from django.shortcuts import redirect, render
+from django.urls import reverse
 
 class HomePageView(TemplateView):
 
@@ -12,3 +13,6 @@ class HomePageView(TemplateView):
 
 def about(request):
     return render(request, 'about.html')
+
+def to_redirect(request):
+    return redirect(reverse('article', kwargs={'tag': 'python', 'article_id': 42}))

@@ -6,6 +6,7 @@ class ArticlePageView(View):
     items = [
         {'article_id': 1, 'tag': 'fiction', 'author': 'J.K. Rowling', 'work': 'Harry Potter', 'date': '1982-04-03'},
         {'article_id': 2, 'tag': 'fiction', 'author': 'Eliezer Judkowskiy', 'work': 'Harry Potter but Rationalised', 'date': '2011-10-17'},
+        {'article_id': 42, 'tag': 'python'}
     ]
 
     template_articles = 'article/index.html'

@@ -23,5 +23,5 @@ urlpatterns = [
     path('home/', views.HomePageView.as_view()),
     path('admin/', admin.site.urls),
     path('about/', views.about),
-    path('articles/', include('hexlet_django_blog.article.urls')),
+    path('articles/', include('hexlet_django_blog.article.urls'), name='one_article'),
 ]
